@@ -1,14 +1,10 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import './index.css';
 
 export default class Card extends Component {
-    render() {
-        return (
-          <div>
-            <div className="Card">gggggggggg</div>
-            <div className="Card">hhhhhhhhhhhh</div>
-            <div className="Card">iiiiiiiiiiii</div>
-          </div>
-        );
-    }
-}
+  render() {
+    const { item } = this.props;
 
+    return <div className="todo-card">{item.name}</div>;
+  }
+}

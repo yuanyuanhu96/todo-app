@@ -1,1 +1,17 @@
+.todo-bucket {
+  /* border: rgb(195, 195, 195);
+  border-width: 1px;
+  border-style: solid;*/
+  background-color: rgb(255, 255, 255);
+  margin: 10px 5px;
+  padding: 10px 10px;
+}
 
+
+.todo-bucket h4 {
+  border: rgb(195, 195, 195);
+  border-width: 1px;
+  border-bottom-style: solid;
+  margin: 0 auto;
+  padding: 10px 0;
+}

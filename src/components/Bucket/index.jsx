@@ -1,14 +1,16 @@
-import React, { Component } from 'react'
-import Card from '../Card'
+import React, { Component } from 'react';
+import Card from '../Card';
+import './index.css';
 
 export default class Bucket extends Component {
   render() {
+    const { items } = this.props;
+    const { id } = this.props;
     return (
-      <div>
-        <h2>Bucket 3</h2>
-        <Card />
+      <div className="todo-bucket">
+        <h4>Bucket {id}</h4>
+        {items.map((item)=>{return(<Card item={item} />);}) }
       </div>
     );
   }
 }
-

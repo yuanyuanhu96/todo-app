@@ -1,16 +1,18 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import './index.css';
 
 export default class Header extends Component {
-    render() {
-        return (
-          <div>
-            <h1>My Bucket</h1>
-            <h3>Make it easy for you to make any choice</h3>
-            <input
-              type="text"
-              placeholder="plese enter your choise here, press enter to submit"
-            />
-          </div>
-        );
-    }
+  render() {
+    return (
+      <div className="todo-header">
+        <h1>My Bucket</h1>
+        <h4>Make it easy for you to make any choice</h4>
+        <input
+          onBlur={this.props.addItem}
+          type="text"
+          placeholder="click else where submit"
+        />
+      </div>
+    );
+  }
 }
