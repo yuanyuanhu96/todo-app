@@ -21,12 +21,16 @@ export default class App extends Component {
     this.setState({ items: newItems });
   };
 
+  deleteItem = (item) => {
+    window.confirm(`Delete?${item.name}`);
+  };
+
   render() {
     const { state } = this;
     return (
       <div className="App">
         <Header addItem={this.addItem} />
-        <Main state={state} />
+        <Main state={state} deleteItem={this.deleteItem} />
       </div>
     );
   }
