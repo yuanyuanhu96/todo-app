@@ -10,7 +10,7 @@ export default class Main extends Component {
       <div className="todo-main">
         {' '}
         {buckets.map((index) => {
-          return <Bucket id={index} items={items} deleteItem={deleteItem} />;
+          return <Bucket key={index} items={items} deleteItem={deleteItem} />;
         })}
       </div>
     );
